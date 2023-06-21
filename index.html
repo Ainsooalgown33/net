@@ -118,7 +118,7 @@
           float: left;
           text-align: center;
         }
-        
+/*         
         @keyframes slide-animation {
           0%, 20% {
             margin-left: 0;
@@ -132,7 +132,7 @@
           75%, 95% {
             margin-left: -2400px;
           }
-        }
+        } */
     
     .cta-btn {
         padding: 10px 20px;
@@ -256,6 +256,7 @@
 
     .swiper-container {
             width: 100%;
+            animation: slide-animation 15s infinite;
             
         }
 
@@ -523,15 +524,26 @@ footer {
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         // Initialize Swiper
+        // var swiper = new Swiper('.swiper-container', {
+        //     loop: true,
+        //     autoplay: {
+        //         delay: 2000,
+        //     },
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+        // });
         var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: {
-                delay: 2000,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+    slidesPerView: 1, // Show only 1 slide at a time
+    loop: false, // Disable loop
+    autoplay: {
+      delay: 2000,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
         });
     </script>
     <footer>
@@ -540,21 +552,5 @@ footer {
     </footer>
 </body>
 </html>
-
-    
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        // Initialize Swiper
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: {
-                delay: 2000,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script> -->
 </body>
 </html>
