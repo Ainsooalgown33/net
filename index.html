@@ -545,6 +545,20 @@ footer {
       prevEl: '.swiper-button-prev',
     },
         });
+        function updateSlidesPerView() {
+    if (window.innerWidth < 768) {
+      swiper.params.slidesPerView = 1; // Show one slide on small screens
+    } else {
+      swiper.params.slidesPerView = 'auto'; // Show multiple slides on larger screens
+    }
+    swiper.update(); // Update Swiper after changing slidesPerView
+  }
+
+  // Call the function on initial page load
+  updateSlidesPerView();
+
+  // Call the function on window resize
+  window.addEventListener('resize', updateSlidesPerView);
     </script>
     <footer>
         <p>&copy; 2023 GLOBAL RESOURCES CITADEL LIMITED. All rights reserved.</p>
