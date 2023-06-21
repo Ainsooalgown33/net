@@ -527,26 +527,15 @@ footer {
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         // Initialize Swiper
-        // var swiper = new Swiper('.swiper-container', {
-        //     loop: true,
-        //     autoplay: {
-        //         delay: 2000,
-        //     },
-        //     navigation: {
-        //         nextEl: '.swiper-button-next',
-        //         prevEl: '.swiper-button-prev',
-        //     },
-        // });
         var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1, // Show only 1 slide at a time
-    loop: false, // Disable loop
-    autoplay: {
-      delay: 2000,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+            loop: true,
+            autoplay: {
+                delay: 2000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
         function updateSlidesPerView() {
     if (window.innerWidth < 768) {
