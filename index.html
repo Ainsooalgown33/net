@@ -29,11 +29,7 @@
     header {
         margin-top: 30px;
         height: 400px;
-        /* background: blue;
-        color: #fff;
-        padding: 10px; */
        background-image: url(https://img.freepik.com/free-photo/agriculture-iot-with-rice-field-background_53876-124635.jpg?w=2000);
-        /* background-size: cover; */
         background-size: 100% 100%;
         color: #fff;
         padding: 10px;
@@ -286,9 +282,8 @@
     color: #5cb874;
     
   }
-  @media screen and (max-width: 480px) {
-  /* Styles for screens up to 480px (e.g., smartphones) */
-}
+  @media screen and (max-width: 480px){
+  }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* Styles for screens between 481px and 768px (e.g., tablets) */
@@ -297,6 +292,33 @@
 @media screen and (min-width: 769px) {
   /* Styles for screens larger than 768px (e.g., desktops) */
 }
+@media screen and (max-width: 480px) {
+            /* Styles for screens up to 480px (e.g., smartphones) */
+            .contact-section {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            /* Styles for screens between 481px and 768px (e.g., tablets) */
+            .contact-section {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 769px) {
+            /* Styles for screens larger than 768px (e.g., desktops) */
+            .contact-section {
+                margin-left: 500px;
+                width: 500px;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+  .contact-section {
+    margin-top: 50px; /* Adjust the margin-top value as needed */
+  }
+}
+
 footer {
             background-color: #000;
             color: #fff;
@@ -331,10 +353,8 @@ footer {
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#logo">Home</a></li>
                 <li><a href="#about-us">About</a></li>
                 <li><a href="#export">Services</a></li>
-                <!-- <li><a href="#download-offline">Team</a></li> -->
                 <li><a href="#contact-section">Contacts</a></li>
             </ul>
         </div>
